@@ -10,10 +10,10 @@
 # Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/edufr/OneDrive/Escritorio/Facultad/Arqui/Proyectoprueba {C:/Users/edufr/OneDrive/Escritorio/Facultad/Arqui/Proyectoprueba/top.sv}
+# vlog -sv -work work +incdir+C:/Users/edufr/OneDrive/Escritorio/Facultad/Arqui/proyectoPrueba {C:/Users/edufr/OneDrive/Escritorio/Facultad/Arqui/proyectoPrueba/top.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:53:46 on Nov 03,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/edufr/OneDrive/Escritorio/Facultad/Arqui/Proyectoprueba" C:/Users/edufr/OneDrive/Escritorio/Facultad/Arqui/Proyectoprueba/top.sv 
+# Start time: 11:35:32 on Nov 08,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/edufr/OneDrive/Escritorio/Facultad/Arqui/proyectoPrueba" C:/Users/edufr/OneDrive/Escritorio/Facultad/Arqui/proyectoPrueba/top.sv 
 # -- Compiling module top
 # -- Compiling module dmem
 # -- Compiling module imem
@@ -35,12 +35,12 @@
 # 
 # Top level modules:
 # 	top
-# End time: 10:53:46 on Nov 03,2023, Elapsed time: 0:00:00
+# End time: 11:35:32 on Nov 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim rtl_work.top
 # vsim rtl_work.top 
-# Start time: 10:53:58 on Nov 03,2023
+# Start time: 11:35:36 on Nov 08,2023
 # Loading sv_std.std
 # Loading rtl_work.top
 # Loading rtl_work.arm
@@ -73,13 +73,13 @@ sim:/top/MemWrite \
 sim:/top/MemData \
 sim:/top/Instr \
 sim:/top/INport \
-sim:/top/INData
-force -freeze sim:/top/reset 1 0
+sim:/top/INData \
+sim:/top/DataAdr
+force -freeze sim:/top/reset 0 0
 force -freeze sim:/top/clk 1 0, 0 {50 ps} -r 100
 run
 run
 run
-force -freeze sim:/top/reset 0 0
 run
 run
 run
@@ -95,28 +95,5 @@ run
 run
 run
 run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# End time: 10:58:25 on Nov 03,2023, Elapsed time: 0:04:27
+# End time: 11:37:59 on Nov 08,2023, Elapsed time: 0:02:23
 # Errors: 0, Warnings: 0

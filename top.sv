@@ -31,7 +31,8 @@ module dmem(input  logic        clk, we,
   logic [31:0] RAM[63:0];
   
   initial
-      $readmemh("C:\\Users\\edufr\\OneDrive\\Escritorio\\Facultad\\Arqui\\Proyectoprueba\\autoFantasticoTablaDeDatos.txt",RAM);
+		//$readmemh("C:\\Users\\edufr\\OneDrive\\Escritorio\\Facultad\\Arqui\\Proyectoprueba\\dmemfile.dat",RAM);
+      $readmemh("C:\\Users\\edufr\\OneDrive\\Escritorio\\Facultad\\Arqui\\Proyectoprueba\\autoFantasticoTablaDeDatos.dat",RAM);
 
   assign rd = RAM[a[31:2]]; // word aligned
 
@@ -46,7 +47,8 @@ module imem(input  logic [31:0] a,
   logic [31:0] RAM[63:0];
 
   initial
-		$readmemh("C:\\Users\\edufr\\OneDrive\\Escritorio\\Facultad\\Arqui\\Proyectoprueba\\autoFantasticoInstrucciones.txt",RAM);
+		//$readmemh("C:\\Users\\edufr\\OneDrive\\Escritorio\\Facultad\\Arqui\\Proyectoprueba\\imemfile.dat",RAM);
+		$readmemh("C:\\Users\\edufr\\OneDrive\\Escritorio\\Facultad\\Arqui\\Proyectoprueba\\autoFantasticoInstrucciones.dat",RAM);
   assign rd = RAM[a[31:2]]; // word aligned
 endmodule
 
